@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+
+<body>
+    <div id="container">
+        <div id="input_field">
+            <input type="text" placeholder="0" id="input_box">
+        </div>
+        <div id="icons">
+            <!-- <i class="fa-regular fa-clock"></i> -->
+            <img src="./images/clock.png" alt="history">
+            <img src="./images/scale.png" alt="conversion">
+            <img src="./images/scientific_calc.png" alt="scientific calculator">
+            <img id="crossBtn" src="./images/cross.jpeg" alt="back_button">
+        </div>
+        <hr>
+        <div id="buttons">
+            <div id="row1" class="calc_buttons">
+                <button id="B1" onclick="cleardisplay()">c</button>
+                <button id="B2" onclick="bracketFunction( '(',')' )" class="operator_button">()</button>
+                <button id="B3" onclick="appendtodisplay('%')" class="operator_button">%</button>
+                <button id="B4" onclick="appendtodisplay('/')" class="operator_button">÷</button>
+            </div>
+            <div id="row2" class="calc_buttons">
+                <button id="B5" onclick="appendtodisplay('7')" value="7">7</button>
+                <button id="B6" onclick="appendtodisplay('8')">8</button>
+                <button id="B7" onclick="appendtodisplay('9')">9</button>
+                <button id="B8" onclick="appendtodisplay('*')" class="operator_button">x</button>
+            </div>
+            <div id="row3" class="calc_buttons">
+                <button id="B9" onclick="appendtodisplay('4')">4</button>
+                <button id="B10" onclick="appendtodisplay('5')">5</button>
+                <button id="B11" onclick="appendtodisplay('6')">6</button>
+                <button id="B12" onclick="appendtodisplay('-')" class="operator_button">-</button>
+            </div>
+            <div id="row4" class="calc_buttons">
+                <button id="B13" onclick="appendtodisplay('1')">1</button>
+                <button id="B14" onclick="appendtodisplay('2')">2</button>
+                <button id="B15" onclick="appendtodisplay('3')">3</button>
+                <button id="B16" onclick="appendtodisplay('+')" class="operator_button">+</button>
+            </div>
+            <div id="row5" class="calc_buttons">
+                <button id="B17" onclick="appendtodisplay()">+/-</button>
+                <button id="B18" onclick="appendtodisplay('0')">0</button>
+                <button id="B19" onclick="appendtodisplay('.')">.</button>
+                <button id="B20" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <hr id="bottomBtn">
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

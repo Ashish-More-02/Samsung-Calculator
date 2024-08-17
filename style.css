@@ -1,0 +1,267 @@
+* {
+    background-color: rgb(224, 224, 224);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+hr {
+    width: 90%;
+    margin: 5px;
+    height: 2px;
+    border: none;
+    background-color: rgb(75, 75, 75);
+}
+
+#container {
+    background-color: rgb(0, 0, 0);
+    height: 95%;
+    width: 25%;
+    padding: 10px 5px;
+    border-radius: 35px;
+    box-shadow: 5px 5px 15px 5px rgb(105, 105, 105);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+
+
+}
+
+
+
+@media screen and (max-width: 1400px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1201px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 1101px) {
+    #container {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 1100px) and (min-width: 1001px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 901px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 801px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 701px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 601px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 600px) and (min-width: 501px) {
+    #container {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #container {
+        width: 350px;
+    }
+}
+
+
+
+#buttons {
+    width: 100%;
+    border-radius: 35px;
+
+}
+
+.calc_buttons {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#row5 {
+    border-radius: 0px 0px 35px 35px;
+}
+
+.calc_buttons button {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 20px 26px;
+    font-size: 1.8rem;
+    border-radius: 50%;
+    border: none;
+    margin: 5px 0px;
+    cursor: pointer;
+
+}
+
+
+#row1,
+#row2,
+#row3,
+#row4,
+#row5 {
+    display: flex;
+}
+
+
+
+#input_field {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#input_field input {
+    width: 90%;
+    margin: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 2.5rem;
+    text-align: end;
+    padding: 10px;
+
+}
+
+#input_field input:focus {
+    border: none;
+}
+
+#row5 :last-child {
+    background-color: rgb(88, 200, 88);
+}
+
+.calc_buttons .operator_button {
+    color: rgb(88, 200, 88);
+    background-color: rgb(60, 60, 60);
+
+}
+
+
+#icons {
+    width: 80%;
+    background-color: black;
+    position: relative;
+    left: 0px;
+}
+
+#icons img {
+    height: 20px;
+    margin: 2px 4px;
+    cursor: pointer;
+}
+
+#crossBtn {
+    position: absolute;
+    height: 25px;
+    right: 0px;
+}
+
+
+#bottomBtn {
+    width: 30%;
+    height: 3px;
+    background-color: rgb(160, 160, 160);
+    border-radius: 20px;
+    margin: 1% 100%;
+}
+
+#B1 {
+    color: rgb(220, 136, 26);
+    background-color: rgb(60, 60, 60);
+}
+
+#B5:active,
+#B6:active,
+#B7:active,
+#B9:active,
+#B10:active,
+#B11:active,
+#B13:active,
+#B14:active,
+#B15:active,
+#B17:active,
+#B18:active,
+#B19:active {
+    font-size: 1.2rem;
+    padding: 23px 29px;
+    background-color: rgb(62, 62, 62);
+    /* flex: none; */
+}
+
+#B1:active,
+#B2:active,
+#B3:active,
+#B4:active,
+#B8:active,
+#B12:active,
+#B16:active,
+#B20:active {
+    font-size: 1.2rem;
+    padding: 23px 28.5px;
+    background-color: rgb(101, 101, 101);
+    /* flex: none; */
+}
+
+
+
+#B1,
+#B2,
+#B3,
+#B4,
+#B5,
+#B6,
+#B7,
+#B8,
+#B9,
+#B10,
+#B11,
+#B12,
+#B13,
+#B14,
+#B15,
+#B16,
+#B17,
+#B18,
+#B19,
+#B20 {
+    transition: all 0.13s ease-in-out;
+    flex: none;
+}
